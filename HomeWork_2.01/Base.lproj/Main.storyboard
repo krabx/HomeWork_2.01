@@ -16,19 +16,27 @@
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="hgK-R5-ATx">
-                                <rect key="frame" x="16" y="59" width="361" height="374"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="hgK-R5-ATx">
+                                <rect key="frame" x="16" y="59" width="361" height="370"/>
                                 <color key="backgroundColor" systemColor="systemGreenColor"/>
                             </view>
-                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="H59-Pp-fGr">
-                                <rect key="frame" x="16" y="441" width="361" height="374"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="H59-Pp-fGr">
+                                <rect key="frame" x="16" y="448" width="361" height="370"/>
                                 <color key="backgroundColor" systemColor="systemRedColor"/>
                             </view>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" red="0.66147833789999999" green="0.70516139239999998" blue="0.86078917980000003" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <constraints>
+                            <constraint firstItem="hgK-R5-ATx" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="Ex2-wC-GHf"/>
+                            <constraint firstItem="hgK-R5-ATx" firstAttribute="height" secondItem="H59-Pp-fGr" secondAttribute="height" id="Gz2-6v-z6C"/>
+                            <constraint firstItem="hgK-R5-ATx" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="J2g-oa-Vue"/>
+                            <constraint firstItem="H59-Pp-fGr" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="Jgt-0m-YTL"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="hgK-R5-ATx" secondAttribute="trailing" constant="16" id="T3C-z1-cUs"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="H59-Pp-fGr" secondAttribute="trailing" constant="16" id="UAc-Fm-AGF"/>
+                            <constraint firstItem="H59-Pp-fGr" firstAttribute="top" secondItem="hgK-R5-ATx" secondAttribute="bottom" constant="19" id="VJQ-JM-XSQ"/>
+                            <constraint firstItem="H59-Pp-fGr" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="nmb-Td-osn"/>
+                        </constraints>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
